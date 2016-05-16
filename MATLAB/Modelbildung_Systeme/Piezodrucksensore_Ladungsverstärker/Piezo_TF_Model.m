@@ -15,8 +15,8 @@ v0 = 100E+3;
 w0 = 10;
 
 AD = tf(v0,[1/w0 1]) %Op-Amp 
-kR = tf([C , 1/RD],[CD+C, 1/RD+1/R ]) %Rückkopplung
-kF = tf([CD+C , 1/R+1/RD,0],[CD*C , CD/R+C/RD , 1/(RD*R)]) %Führungsgröße
+kR = tf([RD*CD , 1],[ CD*(R+RD), 1+CD/C]) %Rückkopplung
+kF = tf([1 , 0] , [C+CD , 1/R+1/RD]) %Führungsgröße
 
 A = -(kF*AD)/(1+kR*AD)
 
