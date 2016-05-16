@@ -1,6 +1,7 @@
 %Systembeschreibung eser Piezo Drucksensores
 
 clear;
+%close all;
 clc;
 
 R = 100E+6;
