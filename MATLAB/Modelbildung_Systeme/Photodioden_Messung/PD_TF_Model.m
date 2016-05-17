@@ -4,15 +4,19 @@ clear;
 %close all;
 clc;
 
-R = 1E+2;
+R = 1E+3;
 C = 1E-9;
 %C = 0;
 
 %Diode von Vishay VBPW34
-RD  = 5E+9;
-CD = 70E-9;
+%RD  = 5E+9;
+%CD = 70E-9;
 %SD = 0.1E-3; %
 SD = 1;%A/lux Beleuchtungsstärke
+
+%von Angabe Bsp.
+RD  = 1E+9;
+CD = 10E-9;
 
 v0 = 100E+3;
 w0 = 10;
