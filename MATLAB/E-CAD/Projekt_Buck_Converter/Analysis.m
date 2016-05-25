@@ -4,7 +4,7 @@
 % Einscheingdauer
 
 %Ausgangsspannung ca.
-T_Uout = R*C;
+T_Uout = Rload*C;
 
 %Spulenstrom ca.
 %1E-4

@@ -1,5 +1,5 @@
 %% setting parameter
-controller_on = true;
+controller_on = false;
 
 %% given parameter
 Uin = 200;
@@ -56,8 +56,6 @@ Ton = T*D;  % induction load time
 Tdelay = T;
 Uout = D*Uin;   %output voltage
 Iin_m = D*ILmax/2;
-
-
 
 L = (Uin-Uout)/(2*ILmax)*D*T;   %calculation of induction
 %L = Uin*D*(1-D)*T/(2*Iin_m);
