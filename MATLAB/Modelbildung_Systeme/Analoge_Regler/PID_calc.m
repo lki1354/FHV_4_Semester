@@ -13,7 +13,7 @@ z2 = - wz2/(2*wz1) - sqrt( (wz2/(2*wz1) )^2 - wz2 );
 
 %% system PN-Plot
 s = tf('s');
-H = 1+s/wz1+s^2/wz2/ (s/wn);
+H = (1+s/wz1+s^2/wz2) / (s/wn);
 z = zero(H);
 p = pole(H);
 zplane(z,p);
